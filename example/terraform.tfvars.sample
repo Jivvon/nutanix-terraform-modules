@@ -1,0 +1,11 @@
+cluster_name = "[prism_cluster_name]"
+
+username = "[prism_username]"
+password = "[prism_password]"
+endpoint = "[prism_endpoint]"
+
+subnet_info = {
+  name = "[subnet_name]"
+  vlan_id = "[subnet_vlan_id]"
+  subnet_ip = "[subnet_subnet_ip]"
+}
