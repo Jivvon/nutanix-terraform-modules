@@ -1,11 +1,23 @@
+### prism ###
 cluster_name = "[prism_cluster_name]"
 
 username = "[prism_username]"
 password = "[prism_password]"
 endpoint = "[prism_endpoint]"
 
+### subnet module ###
 subnet_info = {
   name = "[subnet_name]"
   vlan_id = "[subnet_vlan_id]"
   subnet_ip = "[subnet_subnet_ip]"
+}
+
+### vm module ###
+vm_info = {
+  name = "[vm_name]"
+  cpu = "[vm_cpu]"
+  memory = "[vm_memory]"
+  disk = "[vm_disk]"
+  image_name = "[vm_image_name]"
+  ip = "[vm_ip]"
 }

@@ -23,3 +23,16 @@ variable "subnet_info" {
     subnet_ip = null
   }
 }
+
+variable "vm_info" {
+  description = "vm info"
+  type = map(any)
+  default = {
+    name = null
+    cpu = null
+    memory = null
+    disk = null
+    image_name = null
+    ip = null
+  }
+}
