@@ -23,14 +23,14 @@ variable "subnet_info" {
   })
 }
 
-variable "vm_info" {
-  description = "vm info"
-  type        = object({
+variable "vm_info_list" {
+  description = "The List of multiple vms' info"
+  type        = list(object({
     name       = string
     cpu        = number
     memory     = number
     disk       = number
     image_name = string
     ip         = string
-  })
+  }))
 }
