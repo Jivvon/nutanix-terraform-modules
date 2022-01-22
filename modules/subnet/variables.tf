@@ -24,6 +24,6 @@ variable "subnet_type" {
 }
 
 variable "prefix_length" {
-  type = string
+  type = number
   default = 24
 }

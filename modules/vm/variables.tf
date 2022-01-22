@@ -9,17 +9,17 @@ variable "cluster_id" {
 }
 
 variable "num_vcpus_per_socket" {
-  type = string
+  type = number
   default = 2
 }
 
 variable "num_sockets" {
-  type = string
+  type = number
   default = 1
 }
 
 variable "memory_size_gib" {
-  type = string
+  type = number
   default = 4
 }
 
@@ -29,7 +29,7 @@ variable "image_id" {
 }
 
 variable "disk_size_gib" {
-  type = string
+  type = number
   default = 20
 }
 
