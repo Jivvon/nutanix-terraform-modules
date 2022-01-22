@@ -8,11 +8,11 @@ terraform {
 }
 
 resource "nutanix_virtual_machine" "vm" {
-  name = var.name
-  cluster_uuid = var.cluster_id
+  name                 = var.name
+  cluster_uuid         = var.cluster_id
   num_vcpus_per_socket = var.num_vcpus_per_socket
-  num_sockets = var.num_sockets
-  memory_size_mib = var.memory_size_gib * 1024
+  num_sockets          = var.num_sockets
+  memory_size_mib      = var.memory_size_gib * 1024
 
   disk_list {
     data_source_reference = {
@@ -29,7 +29,7 @@ resource "nutanix_virtual_machine" "vm" {
     subnet_uuid = var.subnet_id
     ip_endpoint_list {
       type = "ASSIGNED"
-      ip = var.subnet_ip_endpoint
+      ip   = var.subnet_ip_endpoint
     }
   }
 }
