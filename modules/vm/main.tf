@@ -14,6 +14,8 @@ resource "nutanix_virtual_machine" "vm" {
   num_sockets          = var.num_sockets
   memory_size_mib      = var.memory_size_gib * 1024
 
+  guest_customization_cloud_init_user_data = var.guest_customization_cloud_init_user_data
+
   disk_list {
     data_source_reference = {
       kind = "image"
