@@ -17,14 +17,11 @@ resource "nutanix_virtual_machine" "vm" {
   guest_customization_cloud_init_user_data = var.guest_customization_cloud_init_user_data
 
   disk_list {
+    disk_size_mib         = var.disk_size_gib * 1024 # GB
     data_source_reference = {
       kind = "image"
       uuid = var.image_id
     }
-  }
-
-  disk_list {
-    disk_size_mib = var.disk_size_gib * 1024 # GB
   }
 
   nic_list {
